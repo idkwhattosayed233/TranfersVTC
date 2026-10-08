@@ -1,0 +1,1519 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Valencia VIP Transfers | Transporte Privado VTC</title>
+
+  <meta
+    name="description"
+    content="Transporte privado VTC en Valencia. Transfers al Aeropuerto de Manises, estaciones, hoteles, congresos y viajes de larga distancia."
+  >
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            black: '#0a0a0a',
+            graphite: '#121212',
+            gold: '#d4af37',
+            champagne: '#e8d39a'
+          },
+
+          fontFamily: {
+            sans: ['DM Sans', 'sans-serif'],
+            display: ['Manrope', 'sans-serif']
+          },
+
+          boxShadow: {
+            luxury: '0 25px 80px rgba(0,0,0,.45)',
+            card: '0 15px 50px rgba(0,0,0,.25)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #0a0a0a;
+    }
+
+    /* Luxury gradients */
+    .gold-line {
+      background: linear-gradient(
+        90deg,
+        transparent,
+        #d4af37,
+        transparent
+      );
+    }
+
+    .hero-glow {
+      background:
+        radial-gradient(
+          circle at 75% 30%,
+          rgba(212,175,55,.13),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 20% 80%,
+          rgba(212,175,55,.07),
+          transparent 30%
+        );
+    }
+
+    .gold-text {
+      background: linear-gradient(
+        120deg,
+        #d4af37,
+        #f1dda0,
+        #b99120
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .glass {
+      background: rgba(255,255,255,.035);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    .luxury-border {
+      border: 1px solid rgba(255,255,255,.09);
+    }
+
+    .gold-border {
+      border: 1px solid rgba(212,175,55,.35);
+    }
+
+    .card-hover {
+      transition:
+        transform .3s ease,
+        border-color .3s ease,
+        background .3s ease,
+        box-shadow .3s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-5px);
+      border-color: rgba(212,175,55,.45);
+      box-shadow: 0 25px 70px rgba(0,0,0,.35);
+    }
+
+    .whatsapp-pulse {
+      animation: whatsappPulse 2.4s infinite;
+    }
+
+    @keyframes whatsappPulse {
+      0%, 100% {
+        box-shadow: 0 0 0 0 rgba(37,211,102,.30);
+      }
+
+      50% {
+        box-shadow: 0 0 0 12px rgba(37,211,102,0);
+      }
+    }
+
+    /* Hide scrollbar for horizontal mobile route cards */
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+
+
+<body class="bg-black text-white font-sans">
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="fixed top-0 left-0 right-0 z-50">
+
+  <nav
+    class="max-w-7xl mx-auto px-5 lg:px-8 py-4 lg:py-5
+           flex items-center justify-between"
+  >
+
+    <!-- LOGO -->
+    <a href="#" class="group">
+
+      <div class="flex items-center gap-3">
+
+        <div
+          class="w-10 h-10 rounded-lg
+                 border border-[#d4af37]/30
+                 flex items-center justify-center
+                 bg-white/[.03]"
+        >
+          <span class="text-[#d4af37] font-display font-bold text-lg">
+            V
+          </span>
+        </div>
+
+        <div>
+          <div class="font-display font-bold tracking-wide text-sm sm:text-base">
+            VALENCIA
+          </div>
+
+          <div
+            class="text-[#d4af37] text-[9px]
+                   tracking-[.28em] font-semibold"
+          >
+            VIP TRANSFERS
+          </div>
+        </div>
+
+      </div>
+
+    </a>
+
+
+    <!-- NAV CTA -->
+    <a
+      href="https://wa.me/34643669611?text=Hola,%20me%20gustaría%20reservar%20un%20transfer."
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hidden sm:inline-flex items-center gap-2
+             bg-white text-black
+             hover:bg-[#d4af37]
+             px-5 py-3 rounded-lg
+             text-sm font-bold
+             transition"
+    >
+
+      <svg
+        class="w-4 h-4"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path d="M20.5 3.5A11.9 11.9 0 0 0 12.05 0C5.5 0 .17 5.33.17 11.88c0 2.1.55 4.15 1.59 5.94L.1 24l6.31-1.65a11.85 11.85 0 0 0 5.64 1.43h.01c6.54 0 11.87-5.33 11.87-11.88 0-3.17-1.23-6.15-3.43-8.4Zm-8.45 18.25h-.01a9.87 9.87 0 0 1-5.03-1.37l-.36-.21-3.75.98 1-3.65-.23-.37a9.84 9.84 0 1 1 8.38 4.62Zm5.41-7.39c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.76.97-.93 1.17-.17.2-.34.22-.64.07-.3-.15-1.26-.46-2.4-1.46-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.03 1.02-1.03 2.48s1.06 2.88 1.21 3.08c.15.2 2.09 3.19 5.08 4.47.71.31 1.26.49 1.68.63.71.23 1.35.2 1.86.12.57-.08 1.76-.72 2.01-1.41.25-.69.25-1.28.17-1.4-.07-.12-.27-.2-.57-.35Z"/>
+      </svg>
+
+      Reservar Transfer
+    </a>
+
+  </nav>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section
+  class="relative min-h-screen
+         flex items-center
+         overflow-hidden
+         bg-[#0a0a0a]"
+>
+
+  <!-- Glow -->
+  <div class="absolute inset-0 hero-glow"></div>
+
+  <!-- Grid -->
+  <div
+    class="absolute inset-0 opacity-[.035]"
+    style="
+      background-image:
+      linear-gradient(rgba(255,255,255,.5) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.5) 1px, transparent 1px);
+      background-size: 70px 70px;
+    "
+  ></div>
+
+
+  <div
+    class="relative max-w-7xl mx-auto
+           px-5 lg:px-8
+           pt-32 pb-20
+           w-full"
+  >
+
+    <div class="max-w-4xl">
+
+      <!-- Badge -->
+      <div
+        class="inline-flex items-center gap-2
+               px-4 py-2
+               rounded-full
+               glass luxury-border
+               text-xs text-zinc-300
+               mb-7"
+      >
+
+        <span class="w-2 h-2 rounded-full bg-green-400"></span>
+
+        Transporte privado · Valencia · 24/7
+
+      </div>
+
+
+      <!-- Heading -->
+      <h1
+        class="font-display
+               text-4xl sm:text-5xl
+               lg:text-7xl
+               leading-[1.05]
+               font-extrabold
+               tracking-tight"
+      >
+
+        Tu Transporte Privado
+        <span class="gold-text block">
+          de Primera Clase
+        </span>
+
+        <span class="text-white">
+          en Valencia
+        </span>
+
+      </h1>
+
+
+      <!-- Subtitle -->
+      <p
+        class="mt-7
+               max-w-2xl
+               text-base sm:text-lg
+               text-zinc-400
+               leading-relaxed"
+      >
+        Traslados al Aeropuerto de Manises, Estaciones de Tren,
+        Congresos y Eventos VIP. Puntualidad, confort y discreción
+        en cada trayecto.
+      </p>
+
+
+      <!-- CTAs -->
+      <div
+        class="mt-9
+               flex flex-col sm:flex-row
+               gap-3"
+      >
+
+        <!-- WhatsApp -->
+        <a
+          href="https://wa.me/34643669611?text=Hola,%20me%20gustaría%20pedir%20un%20presupuesto%20para%20un%20transfer."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="whatsapp-pulse
+                 inline-flex items-center justify-center gap-3
+                 bg-[#25D366]
+                 hover:bg-[#20bd5a]
+                 text-white
+                 font-bold
+                 px-7 py-4
+                 rounded-xl
+                 transition"
+        >
+
+          <svg
+            class="w-5 h-5"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path d="M20.52 3.48A11.85 11.85 0 0 0 12.05 0C5.49 0 .15 5.34.15 11.9c0 2.1.55 4.15 1.59 5.95L.08 24l6.3-1.64a11.9 11.9 0 0 0 5.67 1.44h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.17-3.43-8.42ZM12.06 21.8h-.01a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.74.98 1-3.65-.23-.37a9.89 9.89 0 1 1 8.39 4.63Zm5.43-7.41c-.3-.15-1.77-.87-2.05-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.46-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.09 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.41.25-.69.25-1.28.17-1.4-.07-.12-.27-.2-.57-.35Z"/>
+          </svg>
+
+          Pedir Presupuesto por WhatsApp
+
+        </a>
+
+
+        <!-- Secondary -->
+        <a
+          href="#flota"
+          class="inline-flex items-center justify-center gap-2
+                 border border-[#d4af37]/50
+                 hover:border-[#d4af37]
+                 hover:bg-[#d4af37]/10
+                 text-[#e8d39a]
+                 font-semibold
+                 px-7 py-4
+                 rounded-xl
+                 transition"
+        >
+
+          Ver Flota y Tarifas
+
+          <span>↓</span>
+
+        </a>
+
+      </div>
+
+
+      <!-- Hero Stats -->
+      <div
+        class="mt-12
+               grid grid-cols-1 sm:grid-cols-3
+               gap-px
+               bg-white/10
+               max-w-3xl"
+      >
+
+        <div class="bg-[#0a0a0a] p-5">
+          <div class="text-[#d4af37] font-display font-bold text-xl">
+            100%
+          </div>
+          <div class="text-xs text-zinc-500 mt-1">
+            Puntualidad
+          </div>
+        </div>
+
+        <div class="bg-[#0a0a0a] p-5">
+          <div class="text-[#d4af37] font-display font-bold text-xl">
+            FIJO
+          </div>
+          <div class="text-xs text-zinc-500 mt-1">
+            Precio sin sorpresas
+          </div>
+        </div>
+
+        <div class="bg-[#0a0a0a] p-5">
+          <div class="text-[#d4af37] font-display font-bold text-xl">
+            VIP
+          </div>
+          <div class="text-xs text-zinc-500 mt-1">
+            Mercedes-Benz / Ejecutivo
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ROUTES / ESTIMATOR
+===================================================== -->
+
+<section
+  id="rutas"
+  class="py-20 lg:py-28
+         bg-[#101010]"
+>
+
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+    <div class="max-w-2xl">
+
+      <span
+        class="text-[#d4af37]
+               text-xs font-bold
+               uppercase tracking-[.22em]"
+      >
+        Rutas frecuentes
+      </span>
+
+      <h2
+        class="font-display
+               text-3xl sm:text-4xl
+               font-bold
+               mt-3"
+      >
+        Tu trayecto.
+        <span class="text-zinc-500">
+          Tu precio cerrado.
+        </span>
+      </h2>
+
+      <p class="text-zinc-500 mt-4 leading-relaxed">
+        Selecciona uno de los trayectos más solicitados
+        y solicita tu tarifa personalizada directamente por WhatsApp.
+      </p>
+
+    </div>
+
+
+    <!-- Route Cards -->
+    <div
+      class="mt-12
+             grid md:grid-cols-2
+             gap-5"
+    >
+
+
+      <!-- ROUTE 1 -->
+      <article
+        class="card-hover
+               glass
+               luxury-border
+               rounded-2xl
+               p-6 sm:p-7"
+      >
+
+        <div class="flex justify-between items-start gap-4">
+
+          <div>
+
+            <span class="text-xs text-zinc-500">
+              AIRPORT TRANSFER
+            </span>
+
+            <h3
+              class="font-display
+                     font-bold
+                     text-lg
+                     mt-2"
+            >
+              Aeropuerto Manises
+              <span class="text-zinc-500">↔</span>
+              Valencia Centro
+            </h3>
+
+          </div>
+
+          <div
+            class="w-10 h-10
+                   rounded-lg
+                   bg-[#d4af37]/10
+                   text-[#d4af37]
+                   flex items-center justify-center"
+          >
+            ✈
+          </div>
+
+        </div>
+
+
+        <div class="flex gap-5 mt-6 text-sm">
+
+          <div>
+            <div class="text-zinc-600 text-xs">
+              TIEMPO EST.
+            </div>
+            <div class="text-zinc-300 mt-1">
+              20–30 min
+            </div>
+          </div>
+
+          <div>
+            <div class="text-zinc-600 text-xs">
+              TARIFA
+            </div>
+            <div class="text-[#e8d39a] mt-1">
+              Cerrada
+            </div>
+          </div>
+
+        </div>
+
+
+        <a
+          href="https://wa.me/34643669611?text=Hola,%20quiero%20consultar%20la%20tarifa%20del%20transfer%20Aeropuerto%20de%20Manises%20-%20Valencia%20Centro."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-6
+                 w-full
+                 inline-flex
+                 items-center
+                 justify-center
+                 py-3
+                 rounded-lg
+                 border border-white/10
+                 hover:border-[#d4af37]/40
+                 hover:bg-[#d4af37]/5
+                 text-sm
+                 font-semibold
+                 transition"
+        >
+          Consultar tarifa →
+        </a>
+
+      </article>
+
+
+      <!-- ROUTE 2 -->
+      <article
+        class="card-hover
+               glass
+               luxury-border
+               rounded-2xl
+               p-6 sm:p-7"
+      >
+
+        <div class="flex justify-between items-start gap-4">
+
+          <div>
+
+            <span class="text-xs text-zinc-500">
+              TRAIN TRANSFER
+            </span>
+
+            <h3
+              class="font-display
+                     font-bold
+                     text-lg
+                     mt-2"
+            >
+              Joaquín Sorolla
+              <span class="text-zinc-500">↔</span>
+              Hotel / Puerto
+            </h3>
+
+          </div>
+
+          <div
+            class="w-10 h-10
+                   rounded-lg
+                   bg-[#d4af37]/10
+                   text-[#d4af37]
+                   flex items-center justify-center"
+          >
+            🚆
+          </div>
+
+        </div>
+
+
+        <div class="flex gap-5 mt-6 text-sm">
+
+          <div>
+            <div class="text-zinc-600 text-xs">
+              TIEMPO EST.
+            </div>
+            <div class="text-zinc-300 mt-1">
+              Según destino
+            </div>
+          </div>
+
+          <div>
+            <div class="text-zinc-600 text-xs">
+              TARIFA
+            </div>
+            <div class="text-[#e8d39a] mt-1">
+              Cerrada
+            </div>
+          </div>
+
+        </div>
+
+
+        <a
+          href="https://wa.me/34643669611?text=Hola,%20quiero%20consultar%20un%20transfer%20desde%20Joaqu%C3%ADn%20Sorolla%20hasta%20mi%20hotel%20o%20el%20Puerto."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-6
+                 w-full
+                 inline-flex
+                 items-center
+                 justify-center
+                 py-3
+                 rounded-lg
+                 border border-white/10
+                 hover:border-[#d4af37]/40
+                 hover:bg-[#d4af37]/5
+                 text-sm
+                 font-semibold
+                 transition"
+        >
+          Consultar tarifa →
+        </a>
+
+      </article>
+
+
+      <!-- ROUTE 3 -->
+      <article
+        class="card-hover
+               glass
+               luxury-border
+               rounded-2xl
+               p-6 sm:p-7"
+      >
+
+        <div class="flex justify-between items-start gap-4">
+
+          <div>
+
+            <span class="text-xs text-zinc-500">
+              EVENTS & BUSINESS
+            </span>
+
+            <h3
+              class="font-display
+                     font-bold
+                     text-lg
+                     mt-2"
+            >
+              Valencia
+              <span class="text-zinc-500">↔</span>
+              Feria / Congresos
+            </h3>
+
+          </div>
+
+          <div
+            class="w-10 h-10
+                   rounded-lg
+                   bg-[#d4af37]/10
+                   text-[#d4af37]
+                   flex items-center justify-center"
+          >
+            ◈
+          </div>
+
+        </div>
+
+
+        <div class="flex gap-5 mt-6 text-sm">
+
+          <div>
+            <div class="text-zinc-600 text-xs">
+              SERVICIO
+            </div>
+            <div class="text-zinc-300 mt-1">
+              Ejecutivo
+            </div>
+          </div>
+
+          <div>
+            <div class="text-zinc-600 text-xs">
+              TARIFA
+            </div>
+            <div class="text-[#e8d39a] mt-1">
+              Cerrada
+            </div>
+          </div>
+
+        </div>
+
+
+        <a
+          href="https://wa.me/34643669611?text=Hola,%20quiero%20consultar%20un%20transfer%20para%20Feria%20Valencia%20o%20un%20congreso."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-6
+                 w-full
+                 inline-flex
+                 items-center
+                 justify-center
+                 py-3
+                 rounded-lg
+                 border border-white/10
+                 hover:border-[#d4af37]/40
+                 hover:bg-[#d4af37]/5
+                 text-sm
+                 font-semibold
+                 transition"
+        >
+          Consultar tarifa →
+        </a>
+
+      </article>
+
+
+      <!-- ROUTE 4 -->
+      <article
+        class="card-hover
+               glass
+               luxury-border
+               rounded-2xl
+               p-6 sm:p-7"
+      >
+
+        <div class="flex justify-between items-start gap-4">
+
+          <div>
+
+            <span class="text-xs text-zinc-500">
+              LONG DISTANCE
+            </span>
+
+            <h3
+              class="font-display
+                     font-bold
+                     text-lg
+                     mt-2"
+            >
+              Valencia
+              <span class="text-zinc-500">↔</span>
+              Madrid / Alicante
+            </h3>
+
+          </div>
+
+          <div
+            class="w-10 h-10
+                   rounded-lg
+                   bg-[#d4af37]/10
+                   text-[#d4af37]
+                   flex items-center justify-center"
+          >
+            → 
+          </div>
+
+        </div>
+
+
+        <div class="flex gap-5 mt-6 text-sm">
+
+          <div>
+            <div class="text-zinc-600 text-xs">
+              SERVICIO
+            </div>
+            <div class="text-zinc-300 mt-1">
+              Puerta a puerta
+            </div>
+          </div>
+
+          <div>
+            <div class="text-zinc-600 text-xs">
+              TARIFA
+            </div>
+            <div class="text-[#e8d39a] mt-1">
+              Cerrada
+            </div>
+          </div>
+
+        </div>
+
+
+        <a
+          href="https://wa.me/34643669611?text=Hola,%20quiero%20consultar%20un%20viaje%20de%20larga%20distancia%20desde%20Valencia."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-6
+                 w-full
+                 inline-flex
+                 items-center
+                 justify-center
+                 py-3
+                 rounded-lg
+                 border border-white/10
+                 hover:border-[#d4af37]/40
+                 hover:bg-[#d4af37]/5
+                 text-sm
+                 font-semibold
+                 transition"
+        >
+          Consultar tarifa →
+        </a>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FLEET
+===================================================== -->
+
+<section
+  id="flota"
+  class="py-20 lg:py-28
+         bg-[#0a0a0a]"
+>
+
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+    <div class="text-center max-w-2xl mx-auto">
+
+      <span
+        class="text-[#d4af37]
+               text-xs font-bold
+               uppercase tracking-[.22em]"
+      >
+        Nuestra flota
+      </span>
+
+      <h2
+        class="font-display
+               text-3xl sm:text-4xl
+               font-bold mt-3"
+      >
+        Confort ejecutivo.
+        <span class="text-zinc-500">
+          Sin concesiones.
+        </span>
+      </h2>
+
+      <p class="text-zinc-500 mt-4">
+        Vehículos seleccionados para ofrecer una experiencia
+        de transporte superior.
+      </p>
+
+    </div>
+
+
+    <div
+      class="grid md:grid-cols-2
+             gap-6
+             mt-12
+             max-w-5xl mx-auto"
+    >
+
+      <!-- SEDAN -->
+      <article
+        class="relative overflow-hidden
+               rounded-2xl
+               min-h-[430px]
+               bg-gradient-to-br
+               from-zinc-900
+               to-[#111]
+               luxury-border
+               card-hover"
+      >
+
+        <!-- Placeholder visual -->
+        <div
+          class="absolute inset-0
+                 flex items-center justify-center
+                 opacity-20"
+        >
+
+          <div
+            class="w-64 h-32
+                   border-t-4
+                   border-[#d4af37]
+                   rounded-[50%]"
+          ></div>
+
+        </div>
+
+
+        <div
+          class="relative
+                 h-full min-h-[430px]
+                 p-7
+                 flex flex-col justify-end"
+        >
+
+          <span
+            class="text-[#d4af37]
+                   text-xs font-bold
+                   tracking-[.2em]"
+          >
+            CLASE EJECUTIVA
+          </span>
+
+          <h3
+            class="font-display
+                   text-2xl
+                   font-bold mt-2"
+          >
+            Berlina Ejecutiva
+          </h3>
+
+          <p class="text-zinc-500 mt-2 text-sm">
+            Ideal para viajes de negocios,
+            parejas y traslados premium.
+          </p>
+
+          <div
+            class="flex gap-5
+                   mt-5
+                   text-sm
+                   text-zinc-400"
+          >
+
+            <span>1–4 pasajeros</span>
+            <span>•</span>
+            <span>Equipaje</span>
+
+          </div>
+
+          <a
+            href="https://wa.me/34643669611?text=Hola,%20quiero%20reservar%20una%20berlina%20ejecutiva."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-6
+                   inline-flex
+                   justify-center
+                   py-3
+                   rounded-lg
+                   bg-white
+                   text-black
+                   text-sm
+                   font-bold
+                   hover:bg-[#d4af37]
+                   transition"
+          >
+            Solicitar vehículo
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- VAN -->
+      <article
+        class="relative overflow-hidden
+               rounded-2xl
+               min-h-[430px]
+               bg-gradient-to-br
+               from-[#151515]
+               to-[#0c0c0c]
+               gold-border
+               card-hover"
+      >
+
+        <div
+          class="absolute top-5 right-5
+                 px-3 py-1
+                 rounded-full
+                 bg-[#d4af37]/10
+                 border border-[#d4af37]/20
+                 text-[#e8d39a]
+                 text-[10px]
+                 font-bold
+                 tracking-wider"
+        >
+          VIP
+        </div>
+
+
+        <div
+          class="absolute inset-0
+                 flex items-center justify-center
+                 opacity-20"
+        >
+
+          <div
+            class="w-72 h-36
+                   border-t-4
+                   border-[#d4af37]
+                   rounded-[50%]"
+          ></div>
+
+        </div>
+
+
+        <div
+          class="relative
+                 h-full min-h-[430px]
+                 p-7
+                 flex flex-col justify-end"
+        >
+
+          <span
+            class="text-[#d4af37]
+                   text-xs font-bold
+                   tracking-[.2em]"
+          >
+            GRUPOS & EQUIPAJE
+          </span>
+
+          <h3
+            class="font-display
+                   text-2xl
+                   font-bold mt-2"
+          >
+            Monovolumen VIP
+          </h3>
+
+          <p class="text-zinc-500 mt-2 text-sm">
+            Más espacio y comodidad para grupos,
+            familias y equipaje extra.
+          </p>
+
+          <div
+            class="flex gap-5
+                   mt-5
+                   text-sm
+                   text-zinc-400"
+          >
+
+            <span>Grupos</span>
+            <span>•</span>
+            <span>Equipaje extra</span>
+
+          </div>
+
+          <a
+            href="https://wa.me/34643669611?text=Hola,%20quiero%20reservar%20un%20monovolumen%20VIP."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-6
+                   inline-flex
+                   justify-center
+                   py-3
+                   rounded-lg
+                   bg-[#d4af37]
+                   text-black
+                   text-sm
+                   font-bold
+                   hover:bg-[#e8d39a]
+                   transition"
+          >
+            Solicitar vehículo
+          </a>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     BENEFITS
+===================================================== -->
+
+<section
+  class="py-20 lg:py-28
+         bg-[#101010]"
+>
+
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+      <div>
+
+        <span
+          class="text-[#d4af37]
+                 text-xs font-bold
+                 uppercase tracking-[.22em]"
+        >
+          Servicio premium
+        </span>
+
+        <h2
+          class="font-display
+                 text-3xl sm:text-4xl
+                 font-bold
+                 mt-3"
+        >
+          Todo lo que esperas
+          <span class="text-zinc-500">
+            de un servicio VIP.
+          </span>
+        </h2>
+
+        <p
+          class="text-zinc-500
+                 mt-5
+                 leading-relaxed
+                 max-w-lg"
+        >
+          Una experiencia diseñada alrededor de tu tiempo:
+          reserva sencilla, comunicación directa y un servicio
+          profesional desde el primer contacto.
+        </p>
+
+      </div>
+
+
+      <div
+        class="grid sm:grid-cols-2
+               gap-px
+               bg-white/10"
+      >
+
+        <!-- Benefit -->
+        <div class="bg-[#101010] p-7">
+
+          <div
+            class="w-11 h-11
+                   rounded-lg
+                   bg-[#d4af37]/10
+                   text-[#d4af37]
+                   flex items-center justify-center
+                   mb-5"
+          >
+            ✓
+          </div>
+
+          <h3 class="font-bold">
+            Conductor profesional
+          </h3>
+
+          <p
+            class="text-sm
+                   text-zinc-500
+                   mt-2
+                   leading-relaxed"
+          >
+            Atención profesional y discreta
+            durante todo el trayecto.
+          </p>
+
+        </div>
+
+
+        <!-- Benefit -->
+        <div class="bg-[#101010] p-7">
+
+          <div
+            class="w-11 h-11
+                   rounded-lg
+                   bg-[#d4af37]/10
+                   text-[#d4af37]
+                   flex items-center justify-center
+                   mb-5"
+          >
+            ✈
+          </div>
+
+          <h3 class="font-bold">
+            Seguimiento de vuelos
+          </h3>
+
+          <p
+            class="text-sm
+                   text-zinc-500
+                   mt-2
+                   leading-relaxed"
+          >
+            Adaptación del servicio ante
+            cambios o retrasos de vuelo.
+          </p>
+
+        </div>
+
+
+        <!-- Benefit -->
+        <div class="bg-[#101010] p-7">
+
+          <div
+            class="w-11 h-11
+                   rounded-lg
+                   bg-[#d4af37]/10
+                   text-[#d4af37]
+                   flex items-center justify-center
+                   mb-5"
+          >
+            €
+          </div>
+
+          <h3 class="font-bold">
+            Pago seguro
+          </h3>
+
+          <p
+            class="text-sm
+                   text-zinc-500
+                   mt-2
+                   leading-relaxed"
+          >
+            Posibilidad de pago mediante
+            tarjeta o Bizum.
+          </p>
+
+        </div>
+
+
+        <!-- Benefit -->
+        <div class="bg-[#101010] p-7">
+
+          <div
+            class="w-11 h-11
+                   rounded-lg
+                   bg-[#d4af37]/10
+                   text-[#d4af37]
+                   flex items-center justify-center
+                   mb-5"
+          >
+            ⚡
+          </div>
+
+          <h3 class="font-bold">
+            Reserva instantánea
+          </h3>
+
+          <p
+            class="text-sm
+                   text-zinc-500
+                   mt-2
+                   leading-relaxed"
+          >
+            Contacta directamente y gestiona
+            tu traslado sin formularios complicados.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FINAL CTA
+===================================================== -->
+
+<section
+  class="relative
+         py-24 lg:py-32
+         bg-[#0a0a0a]
+         overflow-hidden"
+>
+
+  <div
+    class="absolute inset-0
+           bg-[radial-gradient(circle_at_center,rgba(212,175,55,.12),transparent_45%)]"
+  ></div>
+
+
+  <div
+    class="relative
+           max-w-4xl
+           mx-auto
+           px-5
+           text-center"
+  >
+
+    <span
+      class="text-[#d4af37]
+             text-xs font-bold
+             uppercase tracking-[.25em]"
+    >
+      Reserva directa
+    </span>
+
+
+    <h2
+      class="font-display
+             text-3xl sm:text-4xl
+             lg:text-5xl
+             font-extrabold
+             mt-5"
+    >
+      ¿Necesitas un traslado urgente
+      <span class="gold-text">
+        o programar un viaje?
+      </span>
+    </h2>
+
+
+    <p
+      class="text-zinc-500
+             max-w-xl
+             mx-auto
+             mt-5
+             leading-relaxed"
+    >
+      Escríbenos directamente por WhatsApp.
+      Indica origen, destino, fecha y hora y te enviaremos
+      la información de tu servicio.
+    </p>
+
+
+    <a
+      href="https://wa.me/34643669611?text=Hola,%20necesito%20un%20traslado.%0A%0AOrigen:%20%0ADestino:%20%0AFecha:%20%0AHora:%20"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="whatsapp-pulse
+             mt-9
+             inline-flex
+             items-center
+             justify-center
+             gap-3
+             bg-[#25D366]
+             hover:bg-[#20bd5a]
+             text-white
+             font-bold
+             px-8
+             py-4
+             rounded-xl
+             transition"
+    >
+
+      <svg
+        class="w-5 h-5"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path d="M20.52 3.48A11.85 11.85 0 0 0 12.05 0C5.49 0 .15 5.34.15 11.9c0 2.1.55 4.15 1.59 5.95L.08 24l6.3-1.64a11.9 11.9 0 0 0 5.67 1.44h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.17-3.43-8.42ZM12.06 21.8h-.01a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.74.98 1-3.65-.23-.37a9.89 9.89 0 1 1 8.39 4.63Zm5.43-7.41c-.3-.15-1.77-.87-2.05-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.46-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.09 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.41.25-.69.25-1.28.17-1.4-.07-.12-.27-.2-.57-.35Z"/>
+      </svg>
+
+      Escribir por WhatsApp
+
+    </a>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer
+  class="bg-[#050505]
+         border-t border-white/5"
+>
+
+  <div
+    class="max-w-7xl
+           mx-auto
+           px-5 lg:px-8
+           py-10"
+  >
+
+    <div
+      class="flex flex-col
+             md:flex-row
+             justify-between
+             gap-8"
+    >
+
+      <div>
+
+        <div
+          class="font-display
+                 font-bold
+                 tracking-wide"
+        >
+          VALENCIA VIP TRANSFERS
+        </div>
+
+        <p
+          class="text-xs
+                 text-zinc-600
+                 mt-2"
+        >
+          Transporte privado VTC · Valencia
+        </p>
+
+      </div>
+
+
+      <div
+        class="flex flex-wrap
+               gap-5
+               text-xs
+               text-zinc-500"
+      >
+
+        <a
+          href="#"
+          class="hover:text-white transition"
+        >
+          Política de privacidad
+        </a>
+
+        <a
+          href="#"
+          class="hover:text-white transition"
+        >
+          Aviso legal
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div
+      class="border-t
+             border-white/5
+             mt-8
+             pt-6
+             text-xs
+             text-zinc-700"
+    >
+
+      © 2026 Valencia VIP Transfers.
+      Todos los derechos reservados.
+
+      <span class="block mt-2 max-w-2xl">
+        Los tiempos y tarifas mostrados son orientativos.
+        El precio final será confirmado antes de la reserva.
+      </span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     FLOATING WHATSAPP
+===================================================== -->
+
+<a
+  href="https://wa.me/34643669611?text=Hola,%20me%20gustaría%20consultar%20un%20transfer."
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Contactar por WhatsApp"
+  class="whatsapp-pulse
+         fixed
+         bottom-5
+         right-5
+         z-[100]
+         w-16
+         h-16
+         rounded-full
+         bg-[#25D366]
+         hover:bg-[#20bd5a]
+         text-white
+         flex
+         items-center
+         justify-center
+         shadow-2xl
+         transition
+         hover:scale-105"
+>
+
+  <svg
+    class="w-8 h-8"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path d="M20.52 3.48A11.85 11.85 0 0 0 12.05 0C5.49 0 .15 5.34.15 11.9c0 2.1.55 4.15 1.59 5.95L.08 24l6.3-1.64a11.9 11.9 0 0 0 5.67 1.44h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.17-3.43-8.42ZM12.06 21.8h-.01a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.74.98 1-3.65-.23-.37a9.89 9.89 0 1 1 8.39 4.63Zm5.43-7.41c-.3-.15-1.77-.87-2.05-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.46-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.09 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.41.25-.69.25-1.28.17-1.4-.07-.12-.27-.2-.57-.35Z"/>
+  </svg>
+
+</a>
+
+
+</body>
+</html>
+```
